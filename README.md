@@ -15,6 +15,20 @@ th lap_style.lua -style_image images/flowers.png -content_image images/megan.png
 ```
 
 Sample images:
+<p align='center'>
+  <img src='images/megan.png' height='194' width='290'/>
+  <img src='images/flowers.png' height='194' width='290'/>
+  <img src='output/megan_flowers20_0.png' height='194' width='290'/>
+  <img src='output/megan_flowers20_100.png' height='194' width='290'/>  
+</p>
+<p align='center'>
+  <img src='images/girlmrf.jpg' height='194' width='290'/>
+  <img src='images/smallworldI.jpg' height='194' width='290'/>
+  <img src='output/girlmrf_smallworldI_20_0.png' height='194' width='290'/>
+  <img src='output/girlmrf_smallworldI_20_200.png' height='194' width='290'/>  
+</p>
+
+Images in the third column are generated with the original Gatys-style. The last column are generated with Lapstyle.
 
 Note: although photo-realistic style transfer[3] (https://github.com/luanfujun/deep-photo-styletransfer) performs amazingly well on their test images, it doesn't work on the images we tested. Seems that in order to make it work well, the content image and the style image has to have highly similar layout and semantic contents.
 
