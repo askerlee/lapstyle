@@ -28,7 +28,7 @@ th lap_style.lua -style_image images/flowers.png -content_image images/megan.png
   <img src='output/girlmrf_smallworldI_20_200.png' width='300'/>  
 </p>
 
-The four images in each group are the content image, the style image, the image synthesized with the original Gatys-style, and the image synthesized with Lapstyle.
+The four images in each group are: 1) content image, 2) style image, 3) image synthesized with the original Gatys-style, and 4) image synthesized with Lapstyle.
 
 Note: although photo-realistic style transfer[3] (https://github.com/luanfujun/deep-photo-styletransfer) performs amazingly well on their test images, it doesn't work on the images we tested. Seems that in order to make it work well, the content image and the style image has to have highly similar layout and semantic contents.
 
