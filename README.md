@@ -15,9 +15,9 @@ th lap_style.lua -style_image spring.png -content_image megan.png -output_image 
 
 Sample images:
 
-Note: although photo-realistic style transfer (https://github.com/luanfujun/deep-photo-styletransfer) performs amazingly well on their test images, it doesn't work on the images we tested. Seems that in order to make it work well, the content image and the style image has to have highly similar layout and semantic contents.
+Note: although photo-realistic style transfer[3] (https://github.com/luanfujun/deep-photo-styletransfer) performs amazingly well on their test images, it doesn't work on the images we tested. Seems that in order to make it work well, the content image and the style image has to have highly similar layout and semantic contents.
 
-You are welcome to cite our paper with this bibtex:
+You are welcome to cite our paper (https://arxiv.org/abs/1707.01253) with this bibtex:
 
 ```
 @InProceedings{lapstyle,
@@ -27,3 +27,10 @@ You are welcome to cite our paper with this bibtex:
   year      = {2017},
 }
 ```
+
+### References
+[1] Leon A Gatys, Alexander S Ecker,and Matthias Bethge. 2016. Image style transfer using convolutional neural networks. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2414–2423.
+
+[2] Chuan Li and Michael Wand. 2016. Combining markov random fields and convolutional neural networks for image synthesis. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2479–2486.
+
+[3] Fujun Luan, Sylvain Paris, Eli Shechtman, and Kavita Bala. 2017. Deep Photo Style Transfer. arXiv preprint arXiv:1703.07511 (2017).
