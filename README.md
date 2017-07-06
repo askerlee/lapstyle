@@ -3,11 +3,35 @@ Code and test images for the paper "[Laplacian-Steered Neural Style Transfer](ht
 
 Lapstyle extends an existing neural style transfer method with one or multiple Laplacian loss layers. The following three neural style transfer implementations have been extended: 
 
-* **lap_style.lua** - https://github.com/jcjohnson/neural-style Gatys-style[1] implemented by Justin Johnson, using the L-BFGS optimization method.
+* **lap_style.lua** (*Recommended*) - https://github.com/jcjohnson/neural-style Gatys-style[1] implemented by Justin Johnson, using the L-BFGS optimization method.
 * **tf-neural-style/neural_style.py** - https://github.com/anishathalye/neural-style Gatys-style[1] by Anish Athalye, using Adam. 
 * **neural-doodle/doodle.py** - https://github.com/alexjc/neural-doodle MRF-CNN[2] implemented by Alex J. Champandard.
 
 The implementation by Justin Johnson clearly produces the best images (either the original [neural_style.lua](https://github.com/jcjohnson/neural-style/blob/master/neural_style.lua) or the extended [lap_style.lua](https://github.com/askerlee/lapstyle/blob/master/lap_style.lua)). The corresponding content and style losses are also the smallest. Its superiority seems to be ascribed to the L-BFGS optimization, since the algorithm is otherwise identical to Anish Athalye's implementation.
+
+## Setup:
+The setup procedures are the same as those of each original project. The following procedures for **lap_style.lua** are quoted from https://github.com/jcjohnson/neural-style:
+<blockquote>
+Dependencies:
+* [torch7](https://github.com/torch/torch7)
+* [loadcaffe](https://github.com/szagoruyko/loadcaffe)
+
+Optional dependencies:
+* For CUDA backend:
+  * CUDA 6.5+
+  * [cunn](https://github.com/torch/cunn)
+* For cuDNN backend:
+  * [cudnn.torch](https://github.com/soumith/cudnn.torch)
+* For OpenCL backend:
+  * [cltorch](https://github.com/hughperkins/cltorch)
+  * [clnn](https://github.com/hughperkins/clnn)
+
+After installing dependencies, you'll need to run the following script to download the VGG model:
+```
+sh models/download_models.sh
+```
+This will download the original [VGG-19 model](https://gist.github.com/ksimonyan/3785162f95cd2d5fee77#file-readme-md).
+</blockquote>
 
 ### Sample usage:
 ```
