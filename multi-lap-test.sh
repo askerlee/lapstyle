@@ -15,5 +15,5 @@ for (( i=0; i<$configLen; i++ )); do
     laplayers=${laplayersAll[$i]}
     lapweights=${lapweightsAll[$i]}
     outsig="${contentname}_${stylename}${contentweight}_${laplayers}_${lapweights}"
-    th lap_style.lua  -style_image $styleimg -content_image $contentimg -output_image ${outsig}.png -content_weight $contentweight -lap_layers $laplayers -lap_weights $lapweights 2>&1| tee ${outsig}.log
+    th lap_style.lua  -style_image images/$styleimg -content_image images/$contentimg -output_image output/${outsig}.png -content_weight $contentweight -lap_layers $laplayers -lap_weights $lapweights 2>&1| tee output/${outsig}.log
 done

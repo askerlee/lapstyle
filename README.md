@@ -1,6 +1,7 @@
 # Laplacian-Steered Neural Style Transfer
+Code and test images for paper "[Laplacian-Steered Neural Style Transfer](https://arxiv.org/abs/1707.01253)".
 
-Laplacian loss has been extended on the following three neural style transfer implementations: 
+The Laplacian loss has been extended on the following three neural style transfer implementations: 
 
 * **lap_style.lua** - https://github.com/jcjohnson/neural-style Gatys-style[1] implemented by Justin Johnson, using the L-BFGS optimization method.
 * **tf-neural-style/neural_style.py** - https://github.com/anishathalye/neural-style Gatys-style[1] by Anish Athalye, using Adam. 
@@ -10,14 +11,14 @@ The implementation by Justin Johnson clearly produces the best images. It seems 
 
 Sample usage:
 ```
-th lap_style.lua -style_image spring.png -content_image megan.png -output_image megan_spring20_100.png -content_weight 20 -lap_layers 2 -lap_weights 100
+th lap_style.lua -style_image images/flowers.png -content_image images/megan.png -output_image output/megan_flowers20_100.png -content_weight 20 -lap_layers 2 -lap_weights 100
 ```
 
 Sample images:
 
 Note: although photo-realistic style transfer[3] (https://github.com/luanfujun/deep-photo-styletransfer) performs amazingly well on their test images, it doesn't work on the images we tested. Seems that in order to make it work well, the content image and the style image has to have highly similar layout and semantic contents.
 
-You are welcome to cite our paper (https://arxiv.org/abs/1707.01253) with this bibtex:
+You are welcome to cite the paper (https://arxiv.org/abs/1707.01253) with this bibtex:
 
 ```
 @InProceedings{lapstyle,

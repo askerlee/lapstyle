@@ -1,10 +1,11 @@
+# Get statistics from lap_style.lua logs, used to generate Table 1 in the lapstyle paper 
 import re
 import os
 import sys
 import numpy as np
 
 contentimageAll = ( 'megan.png',  'kid5.png',        'goat.png', 'girlmrf.jpg',    'boy.png' )
-styleimageAll   = ( 'spring.png', 'smallworldI.jpg', 'muse.png', 'girlsketch.png', 'girl3.jpg' )
+styleimageAll   = ( 'flowers.png', 'smallworldI.jpg', 'muse.png', 'girlsketch.png', 'girl3.jpg' )
 #sigs = ("20_2_100.log", "20_2_100_nobp.log")
 #contentLayer2contentLossType = [ -1, 1, 2, -1 ]
 
