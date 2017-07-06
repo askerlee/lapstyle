@@ -2,9 +2,9 @@
 
 Laplacian loss has been extended on the following three neural style transfer implementations: 
 
-* lap_style.lua - https://github.com/jcjohnson/neural-style Gatys-style[1] implemented by Justin Johnson, using the L-BFGS optimization method.
-* tf-neural-style/neural_style.py - https://github.com/anishathalye/neural-style Gatys-style[1] by Anish Athalye, using Adam. 
-* neural-doodle - https://github.com/alexjc/neural-doodle MRF-CNN[2] implemented by Alex J. Champandard.
+* **lap_style.lua** - https://github.com/jcjohnson/neural-style Gatys-style[1] implemented by Justin Johnson, using the L-BFGS optimization method.
+* **tf-neural-style/neural_style.py** - https://github.com/anishathalye/neural-style Gatys-style[1] by Anish Athalye, using Adam. 
+* **neural-doodle/doodle.py** - https://github.com/alexjc/neural-doodle MRF-CNN[2] implemented by Alex J. Champandard.
 
 The implementation by Justin Johnson clearly produces the best images. It seems the L-BFGS optimization is the only reason, because this algorithm is otherwise identical to Anish Athalye's implementation.
 
