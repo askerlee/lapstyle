@@ -3,7 +3,7 @@ Code and test images for the paper "[Laplacian-Steered Neural Style Transfer](ht
 
 Lapstyle extends an existing neural style transfer method with one or multiple Laplacian loss layers. The following three neural style transfer implementations have been extended: 
 
-* **lap_style.lua** (*Recommended*) - https://github.com/jcjohnson/neural-style Gatys-style[1] implemented by Justin Johnson, using the L-BFGS optimization method.
+* **lap_style.lua** (*Recommended!*) - https://github.com/jcjohnson/neural-style Gatys-style[1] implemented by Justin Johnson, using the L-BFGS optimization method.
 * **tf-neural-style/neural_style.py** - https://github.com/anishathalye/neural-style Gatys-style[1] by Anish Athalye, using Adam. 
 * **neural-doodle/doodle.py** - https://github.com/alexjc/neural-doodle MRF-CNN[2] implemented by Alex J. Champandard.
 
